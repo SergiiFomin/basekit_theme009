@@ -1,0 +1,353 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                        </h1>
+
+                        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'526', 'imageWidth':'1500', 'url':'http://placehold.it/526x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'526', 'imageWidth':'1500', 'url':'http://placehold.it/526x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'526', 'imageWidth':'1500', 'url':'http://placehold.it/526x1500', 'title':'test title', 'description': 'test desc'},{'imageHeight':'526', 'imageWidth':'1500', 'url':'http://placehold.it/526x1500', 'title':'test title', 'description': 'test desc'}]})|raw}}
+
+                        {{widget('space', 'space', {'height': '70'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--content-->
+    <div class="global">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    {{widget('content', 'content', {content: '<h2>today is best</h2>', lines: 'all'})|raw}}
+                    {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+
+                    <div class="row">
+
+                        <article class="span3">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">42.05</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img5.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">24.95</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img9.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">9.45</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                        <article class="span3">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img2.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">6.05</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img6.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">42.45</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img10.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">25.05</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                        <article class="span3">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img3.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">26.45</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img7.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">5.85</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img11.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">7.95</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                        <article class="span3">
+
+                            <ul class="menu">
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img4.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">42.05</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img8.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">26.95</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'image', { 'src': asset('images/page1-img12.jpg'), 'imageWidth': '768px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'price1', {content: '<strong class="price">23.05</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'name1', {content: '<h3>Lorem ipsum</h3>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text1', {content: 'Gravida atcur ecuuse orci ', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                    </div>
+
+                    {{widget('button', 'menu-button', {italic: false, text:'view full list', 'align':'widget-align-center'})|raw}}
+
+                    {{zone('main')|raw}}
+                    
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                    
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                    <div class="row">
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>what`s new</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<h5>21 june, 2013</h5>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<p>et trices posuere cubilia Suspensse sol licitudin velit sed leo pharetra augue nec augue. Nam elit magnan rerit sit amet tincidu.</p>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<h5>21 june, 2013</h5>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<p>rta diam eu massa. Quisque diam lorem interdum vitaapibus ac scelerisque vitae pedeDonec eget tellus non er at lacinia fermentum.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>about us</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<h5>Nulla facilisi. Aenean nec eros. Ves</h5>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<p>ante ipsum primis in faucibus orci luctus et trices posuere cubilia Suspendisse sol licitudin velit sed leo pharetra augue nec augue. Nam elit magnan rerit sit amet tincidu.</p>', lines: 'all'})|raw}}
+                            {{widget('content', 'content', {content: '<p>nt ac viverra sed nulla. Donec po.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>menu</h3>', lines: 'all'})|raw}}
+
+                            <ul class="list">
+
+                                <li>{{widget('content', 'content', {content: '<a href="#">ltricpharetra gnonec accu</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">san malsuada oc set ero</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">Lorem ipsum dolor sit at</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">constuer aiing elit Mauris ferme</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">ntum tummagna</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">ed laoreet aliquam leo</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">Ut te doloibus</a>', lines: 'all'})|raw}}</li>
+                                <li>{{widget('content', 'content', {content: '<a href="#">eget elentu vel cursus elei</a>', lines: 'all'})|raw}}</li>
+
+                            </ul>
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span3">
+
+                            {{widget('content', 'content', {content: '<h3>follow us</h3>', lines: 'all'})|raw}}
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">
+
+                    {{widget('companyname', 'companyname', {"business": "Steak"})|raw}}
+                    {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013&nbsp;&bull;', lines: 'all'})|raw}}
+                    {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</div>
+
+{% endblock %}

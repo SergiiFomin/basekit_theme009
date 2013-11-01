@@ -1,0 +1,259 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+
+        <div class="header">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+
+                        {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                        </h1>
+
+                        {{widget('space', 'space', {'height': '40'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--content-->
+    <div class="global">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        <article class="span4">
+
+                            {{widget('content', 'content', {content: '<h3>Who we are</h3>', lines: 'all'})|raw}}
+
+                            <ul class="block">
+
+                                <li>
+
+                                    {{widget('content', 'drop1', {content: '1', lines: 'all'})|raw}}
+
+                                    <div class="oveflow">
+
+                                        {{widget('content', 'block-title1', {content: '<h5>serem amet prot halelus lorep prut qienste ster lorem</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'block-text1', {content: 'et trices posuere cubilia Suspensse sol licitudin velit sed leo pharetra ugue nec augue. Nam elit.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('content', 'drop2', {content: '2', lines: 'all'})|raw}}
+
+                                    <div class="oveflow">
+
+                                        {{widget('content', 'block-title2', {content: '<h5>rot halelus lorep prut qienste ster lorem stre pro.</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'block-text2', {content: 'et trices posuere cubilia Suspensse sol licitudin velit sed leo pharetra ugue nec augue. Nam elit.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('content', 'drop3', {content: '3', lines: 'all'})|raw}}
+
+                                    <div class="oveflow">
+
+                                        {{widget('content', 'block-title3', {content: '<h5>rot halelus lorep prut qienste ster lorem stre pro.</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'block-text3', {content: 'et trices posuere cubilia Suspensse sol licitudin velit sed leo pharetra ugue nec augue. Nam elit.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                            
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            {{widget('content', 'content', {content: '<h3>Testimonials</h3>', lines: 'all'})|raw}}
+
+                            <div class="blockquote">
+
+                                {{widget('content', 'blockquote1', {content: '<blockquote>Lorem ipsum dolor sit amet, seres consere stres ect etuer adipiscingt elit, sed ster stersser diamse onm se nibh euisser mod tincidunt am ute laoreet lores magna aliqua. Lorem ipsum dol. Lorem ipsum dolor sit amet, seres con sere stres ect et. Sit amet. Lorem ipsum dolor sit am.</blockquote>', lines: 'all'})|raw}}
+                                {{widget('content', 'name1', {content: '<h5>Sam Kromstain</h5>', lines: 'all'})|raw}}
+
+                            </div>
+
+                            <div class="blockquote">
+
+                                {{widget('content', 'blockquote2', {content: '<blockquote>Lorem ipsum dolor sit amet, seres consere stres ect etuer adipiscingt elit, sed ster stersser diamse onm se nibh euisser mod tincidunt am ute laoreet lores magna aliqua. Lorem ipsum dol. Lorem ipsum dolor sit amet, seres con sere stres ect et. Sit amet. Lorem ipsum dolor sit am.</blockquote>', lines: 'all'})|raw}}
+                                {{widget('content', 'name2', {content: '<h5>Sam Kromstain</h5>', lines: 'all'})|raw}}
+
+                            </div>
+
+                        </article>
+
+                        <article class="span8">
+
+                            {{widget('content', 'content', {content: '<h3>A few words about us</h3>', lines: 'all'})|raw}}
+                            {{widget('content', 'name2', {content: '<p class="color">Sam Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus.</p>', lines: 'all'})|raw}}
+                            {{widget('content', 'name2', {content: '<p>et trices posuere cubilia Suspensse sol licitudin velit sed leo pharetra ugue nec augue. Nam elit. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent estibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis ser aters parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nu.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                            {{zone('main')|raw}}                            
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            {{widget('content', 'content', {content: '<h3>Our Cooks</h3>', lines: 'all'})|raw}}
+
+                            <ul class="team">
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image1', { 'src': asset('images/page2-img1.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name1', {content: '<h5>Laura Stegner</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text1', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image2', { 'src': asset('images/page2-img2.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name2', {content: '<h5>John Franklin</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text2', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image3', { 'src': asset('images/page2-img3.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name3', {content: '<h5>Alan Smith</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text3', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image4', { 'src': asset('images/page2-img4.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name4', {content: '<h5>Jane McCoist</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text4', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image5', { 'src': asset('images/page2-img5.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name5', {content: '<h5>Julie Herzigova</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text5', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="indent">
+
+                                        {{widget('image', 'team-image6', { 'src': asset('images/page2-img6.jpg'), 'imageWidth': '768px'})|raw}}
+                                        {{widget('content', 'team-name6', {content: '<h5>Linda White</h5>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text6', {content: 'et trices posuere cubilia Suspensse sol.', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+
+            <div class="row">
+
+                <section class="span12">
+
+                    <div class="row">
+
+                        <article class="span8">
+
+                            {{widget('companyname', 'companyname', {"business": "Steak"})|raw}}
+                            {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013&nbsp;&bull;', lines: 'all'})|raw}}
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+
+                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+</div>
+
+{% endblock %}
