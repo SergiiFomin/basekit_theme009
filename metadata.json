@@ -77,7 +77,6 @@
             "color": "@color-swatch3"
         },
         "font5": {
-            "font-family": "Helvetica, arial",
             "font-size": "15px",
             "font-weight": "inherit",
             "line-height": "22px",
@@ -85,7 +84,6 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "Georgia",
             "font-size": "22px",
             "font-weight": "inherit",
             "line-height": "30px",
@@ -94,7 +92,6 @@
             "letter-spacing": "inherit"
         },
         "font7": {
-            "font-family": "Georgia",
             "font-size": "15px",
             "font-weight": "inherit",
             "line-height": "20px",
