@@ -1052,70 +1052,83 @@ div[id$="copyright_link"]{
 }
 
 .socialicons{
-  .icons{
-    /*span{
+  overflow: hidden;
+  .icons {
+    float: right;
+    overflow: hidden;
+    span{
+      float: left;
+      margin-left: 5px;
       a{
         position: relative;
         font-size: 0;
         line-height: 0;
         text-decoration: none;
         display: block;
-        width: 42px;
-        height: 42px;
+        width: 28px;
+        height: 28px;
         .border-radius(1000px);
-        background-color: @color-swatch4;
+        background-color: @color-swatch3;
         color: @color-swatch1;
+        font-size: 0;
+        line-height: 0;
+        .transition(all .2s linear);
+        &:hover{
+          background-color: @color-swatch6;
+          color: @color-swatch3;
+        }
         &:before{
           display: block;
-          width: 42px;
-          height: 42px;
+          width: 28px;
+          height: 28px;
           text-align: center;
-          font: 13px/42px 'FontAwesome';
+          font: 14px/28px 'FontAwesome';
+          .transition(all .2s linear);
         }
       }
       &.bk-socialicons-linkedin{
         a{
-          &:before(
+          &:before{
             content: "\f0e1";
-          )
+          }
         }
       }
       &.bk-socialicons-twitter{
         a{
-          &:before(
+          &:before{
             content: "\f099";
-          )
+          }
         }
       }
       &.bk-socialicons-facebook{
         a{
-          &:before(
+          &:before{
             content: "\f09a";
-          )
+          }
         }
       }
       &.bk-socialicons-rss{
         a{
-          &:before(
+          &:before{
             content: "\f09e";
-          )
+          }
         }
       }
       &.bk-socialicons-googleplus{
         a{
-          &:before(
+          &:before{
             content: "\f0d5";
-          )
+          }
         }
       }
       &.bk-socialicons-youtube{
         a{
-          &:before(
+          &:before{
             content: "\f167";
-          )
+          }
         }
       }
-    }*/
+    }
   }
 }
 
