@@ -41,6 +41,10 @@
 
                 <section class="span12">
 
+                    {{zone('main')|raw}}                            
+
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
                     <div class="row">
 
                         <article class="span4">
@@ -117,10 +121,6 @@
                             {{widget('button', 'button', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
 
                             {{widget('space', 'space', {'height': '50'})|raw}}
-
-                            {{zone('main')|raw}}                            
-
-                            {{widget('space', 'space', {'height': '30'})|raw}}
 
                             {{widget('content', 'content', {content: '<h3>Our Cooks</h3>', lines: 'all'})|raw}}
 

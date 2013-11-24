@@ -43,6 +43,10 @@
 
                 <section class="span12">
 
+                    {{zone('main')|raw}}
+                    
+                    {{widget('space', 'space', {'height': '30'})|raw}}
+
                     {{widget('content', 'content', {content: '<h2>today is best</h2>', lines: 'all'})|raw}}
                     {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
 
@@ -251,10 +255,6 @@
                     </div>
 
                     {{widget('button', 'menu-button', {italic: false, text:'view full list', 'align':'widget-align-center'})|raw}}
-
-                    {{zone('main')|raw}}
-                    
-                    {{widget('space', 'space', {'height': '30'})|raw}}
 
                     {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
                     
