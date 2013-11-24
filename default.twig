@@ -19,11 +19,7 @@
 
                         {{widget('space', 'space', {'height': '50'})|raw}}
 
-                        <h1 class="brand">
-                            
-                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
-
-                        </h1>
+                        {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
 
                         {{widget('space', 'space', {'height': '40'})|raw}}
 
@@ -71,18 +67,11 @@
 
                     <div class="row">
 
-                        <article class="span8">
+                        <article class="span12">
 
                             {{widget('companyname', 'companyname', {"business": "Steak"})|raw}}
-                            {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013&nbsp;&bull;', lines: 'all'})|raw}}
-                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                            {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
                             {{widget('space', 'space', {'height': '30'})|raw}}
-
-                        </article>
-
-                        <article class="span4">
-
-                            {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
 
                         </article>
 
