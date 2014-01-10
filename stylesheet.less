@@ -370,138 +370,227 @@ ul li{
 
 /*end menu*/
 
-.responsiveslideshow{
-  margin: -216px auto 0;
+.widget.logo{
+  background-image:image('/images/template/slide-1.jpg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  max-height: 216px;
+  a{
+    color: @color-swatch3;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    background: @color-swatch4;
+    .border-radius(1000px);
+    margin-top: -129px;
+    z-index: 9;
+    margin-bottom: 15px;
+    &:hover{
+      color: @color-swatch1;
+    }
+    .logo{
+      margin: 0px;
+      font-size: 0;
+      line-height: 0;
+      img{
+        display: block;
+      }
+      a{
+        display: inline-block;
+      }   
+    }
+    .company-name{
+      display: inline-block;
+      height: 140px;
+      margin: 0 50px;
+      position: relative;
+      font-size: 70px;
+      line-height: 70px;
+      color: @dark;
+      padding: 0px;
+      top: -190px;
+      background: @color-swatch4;
+      .border-radius(1000px);
+    }
+  }   
+}
+
+.header{
+  .responsiveslideshow{
+    margin: -216px auto 0;
+  }
+}
+
+.responsiveslideshow{  
   position: relative;
   background: @color-swatch1;
   .slideshow-widget{
     padding: 0;
-    .slideshow-image{
-      width: 100%;
+    /* -- Buttons -- */
+    .btns-move{
+      .btn-prev, 
+      .btn-next {
+        top: 50% !important;
+        margin-top: -15px;
+        text-indent: 9999em;
+        overflow: hidden;
+        width: auto !important;
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0;
+        line-height: 0;
+        .opacity(100) !important;
+        color: @color-swatch4;
+        text-align: center;
+        .border-radius(1000px);
+        z-index: 999;
+        &:before{
+          display: block;
+          font: bold 30px/30px 'FontAwesome';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 30px;
+          text-align: center;
+        }
+        &:hover:before{
+          color: @color-swatch2;
+        }
+      }
+      .btn-prev{
+        left: 20px !important;
+        &:before{
+          content: "\f104";
+          content: "\f053";
+        }
+      } 
+      .btn-next{
+        right: 20px !important;
+        &:before{
+          content: "\f105";
+          content: "\f054";
+        }
+      }
     }
-  }
-
-  /* -- Buttons -- */
-
-  .btn-prev, 
-  .btn-next {
-    top: 50% !important;
-    margin-top: -23px;
-    text-indent: 9999em;
-    overflow: hidden;
-    width: 46px !important;
-    height: 46px !important;
-    font-size: 0;
-    line-height: 0;
-    .opacity(100) !important;
-    background-color: @color-swatch1;
-    color: @color-swatch2;
-    text-align: center;
-    .border-radius(1000px);
-    z-index: 999;
-    &:before{
-      display: block;
-      font-size: 30px;
-      line-height: 46px;
-      font: 20px/46px 'FontAwesome';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 46px;
+    /* -- End Buttons -- */
+    /* -- Pause -- */
+    .btn-play {
+      top: 50% !important;
+      left: 50% !important;
+      margin: -16px 0 0 -16px;
+      text-indent: 9999em;
+      overflow: hidden;
+      width: 32px !important;
+      height: 32px !important;
+      font-size: 0;
+      line-height: 0;
+      .opacity(100);
       text-align: center;
+      &:before{
+        display: block;
+        font-size: 30px;
+        line-height: 30px;
+        color: @color-swatch3;
+        font: 30px/30px 'FontAwesome';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        text-align: center;
+      }
+      &:hover:before{
+        color: @color-swatch2;
+      }
     }
-    &:hover:before{
-      background-color: #525252;
-      color: @color-swatch1;
+    .btn-play{
+      left: 50% !important;
+      margin-left: -15px;
+      &:before{
+        content: "\f04b";
+      }
+      &.pause:before{
+        content: "\f04c";
+      }
     }
-  }
-  .btn-prev{
-    left: 20px !important;
-    &:before{
-      content: "\f053";
-    }
-  } 
-  .btn-next{
-    right: 20px !important;
-    &:before{
-      content: "\f054";
-    }
-  }
-
-  .btn-play {
-    top: 70% !important;
-    left: 50% !important;
-    margin: -16px 0 0 -16px;
-    text-indent: 9999em;
-    overflow: hidden;
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 0;
-    line-height: 0;
-    .opacity(100);
-    text-align: center;
-    &:before{
-      display: block;
-      font-size: 30px;
-      line-height: 30px;
-      color: @color-swatch3;
-      font: 30px/30px 'FontAwesome';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 32px;
-      text-align: center;
-    }
-    &:hover:before{
-      color: @color-swatch2;
-    }
-  }
-  .btn-play{
-    left: 50% !important;
-    margin-left: -15px;
-    &:before{
-      content: "\f04b";
-    }
-    &.pause:before{
-      content: "\f04c";
-    }
-  }
-
-  .slideshow-widget-controls{
-    bottom: -49px;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    z-index: 9;
-    .dot {
-      width: 9px;
-      height: 9px;
-      background-color: @color-swatch3 !important;
-      border: none !important;
-      .border-radius(1000px);
-      margin: 0 5px;
-      cursor: pointer;
-      &:hover,
-      &.selected{
-        background-color: @color-swatch4 !important;
+    /* -- End Pause -- */    
+    >ul.slideshow-image-list{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 526px;
+      .slideshow-image{
+        width:auto;
+        height:100%;
+      }
+      .content-wrapper {
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        top:auto;
+        background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1);
+        .title {
+          display: inline-block;
+          padding: 5px 20px 0 20px;
+          font-size: @font-swatch5-font-size;
+          font-weight: @font-swatch5-font-weight;
+          line-height: bkscale(@font-swatch5-line-height, 0.55);
+          color: @color-swatch1;
+          letter-spacing: @font-swatch5-letter-spacing;
+        }
+        .description {
+          display: block;
+          padding: 6px 20px;
+          font-size: @font-swatch5-font-size;
+          font-weight: @font-swatch5-font-weight;
+          line-height: bkscale(@font-swatch5-line-height, 0.55);
+          color: @color-swatch1;
+          letter-spacing: @font-swatch5-letter-spacing;
+        }
       }
     }
   }
-
-  /* -- end Buttons -- */
-
-  .image-wrapper{
-    position: relative;
-    &:before{
-      content: "";
-      display: block;
+  /* -- Controls -- */  
+  .slideshow-widget-controls{
+    bottom: 0px;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    background-color: #d1ccc2;
+    padding: 8px 6px;
+    overflow: hidden;
+    .dot {
+      bottom: -49px;
       position: absolute;
-      top: 0;
-      left: 0;
       right: 0;
-      bottom: 0;
+      width: 100%;
+      z-index: 9;
+      .dot {
+        width: 9px;
+        height: 9px;
+        background-color: @color-swatch3 !important;
+        border: none !important;
+        .border-radius(1000px);
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover,
+        &.selected{
+          background-color: @color-swatch4 !important;
+        }
+      }
     }
   }
+  /* -- End Controls -- */
 }
 
 /*--- header end ------*/
@@ -547,6 +636,7 @@ header, footer, #content{
 
 .gallery-widget{
   margin: 0;
+  overflow: hidden;
   li{
     float: left;
     list-style: none;
@@ -649,61 +739,6 @@ h1{
   text-align: center;
   font: bold 70px/70px 'PT Sans', sans-serif;
   color: @color-swatch6;
-  &.brand{
-    background-image:image('/images/template/slide-1.jpg');
-    background-position: center 0;
-    background-repeat: no-repeat;
-    margin: 0px;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-    text-transform: uppercase;
-    max-height: 216px;
-    .companyheader{
-      display: inline-block;
-      width: 330px;
-      height: 330px;
-      background: @color-swatch4;
-      .border-radius(1000px);
-      margin-top: -129px;
-      z-index: 9;
-      margin-bottom: 15px;
-    }
-    a{
-      color: @color-swatch3;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      position: relative;
-      &:hover{
-        color: @color-swatch1;
-      }
-      .logo{
-        margin: 0px;
-        font-size: 0;
-        line-height: 0;
-        img{
-          display: block;
-        }
-        a{
-          display: inline-block;
-        }   
-      }
-      .company-name{
-        display: inline-block;
-        height: 140px;
-        margin: 0 50px;
-        position: relative;
-        font-size: 70px;
-        line-height: 70px;
-        color: @dark;
-        padding: 0px;
-        top: -190px;
-        background: @color-swatch4;
-        .border-radius(1000px);
-      }
-    }   
-  }
 }
 
 h2{
